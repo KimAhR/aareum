@@ -246,6 +246,14 @@ const SlideWrap = styled.ul`
 		text-align: center;
 		width: 100%;
 	}
+	/* @media only screen and (max-width: 400px) {
+		z-index: 2;
+		position: absolute;
+		top: 250px;
+		left: 0;
+		text-align: center;
+		width: 100%;
+	} */
 `;
 
 const SlideList = styled.li`
@@ -282,6 +290,12 @@ const SlideTxt = styled.div`
 	top: 0;
 	left: 50%;
 	display: inline-block;
+	@media only screen and (max-width: 400px) {
+		position: relative;
+		top: 150px;
+		left: 50%;
+		display: inline-block;
+	}
 
 	a {
 		z-index: 2;
@@ -304,7 +318,10 @@ const SlideTxt = styled.div`
 
 			font-weight: 700;
 			color: #fff;
-			font-size: 3.25rem;
+			font-size: 3rem;
+		}
+		@media only screen and (max-width: 400px) {
+			font-size: 2.25rem;
 		}
 
 		&::before {
